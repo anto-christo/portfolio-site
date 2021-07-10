@@ -25,12 +25,16 @@ export default function Projects() {
                                             <Card.Body>
                                                 <Card.Title>{project.title}</Card.Title>
                                                 <Card.Text>{project.description}</Card.Text>
-                                                <Button variant="outline-primary">View on GitHub</Button>{' '}
+                                                <a className="btn btn-outline-primary" href={project.url} target="_blank">{project.buttonText}</a>
                                             </Card.Body>
                                             <Card.Footer>
-                                                <Badge className="mx-1" variant="warning">JavaScript</Badge>
-                                                <Badge className="mx-1" variant="primary">React Native</Badge>
-                                                <Badge className="mx-1" variant="success">NodeJS</Badge>
+                                                {
+                                                    project.techs.map(tech => {
+                                                        return (
+                                                            <Badge className="mx-1" variant={tech.type}>{tech.name}</Badge>
+                                                        )
+                                                    })
+                                                }
                                             </Card.Footer>
                                         </Card>
                                     </Col>

@@ -1,4 +1,4 @@
-const pages = [
+const PAGES = [
     {
         text: "About",
         path: '/'
@@ -21,4 +21,4 @@ const pages = [
     }
 ];
 
-export default pages;
+export default PAGES;
