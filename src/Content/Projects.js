@@ -1,18 +1,16 @@
 const projects = [
     {
-        title: "Lord of the Isles",
-        description: "An addictive massive online multiplayer game developed using Javascript, HTML, CSS, Node.js and MongoDB.",
-        image: require('../Assets/Projects/lord_of_the_isles.jpg')
+        title: "Tweak",
+        description: "A cross-platform mobile application built using React Native to provide interactive courses on English grammar and vocabulary.",
+        buttonText: 
     },
     {
-        title: "Space Rush",
-        description: "An addictive massive online multiplayer game developed using Javascript, HTML, CSS, Node.js and MongoDB.",
-        image: require('../Assets/Projects/space_rush.jpg')
+        title: "WebRTC Video Calling",
+        description: "A peer-to-peer web-based video calling application built entirely using Web RealTime Communication (WebRTC)."
     },
     {
-        title: "FrappeJS CLI",
-        description: "An addictive massive online multiplayer game developed using Javascript, HTML, CSS, Node.js and MongoDB.",
-        image: require('../Assets/Projects/frappejs.jpg')
+        title: "Lords of the Isles",
+        description: "A massive online multiplayer game. Explore the isles of the world, buy islands and ships to gather and trade resources to become the ultimate Lord of the Isles."
     }
 ];
 
