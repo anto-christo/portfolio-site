@@ -10,7 +10,7 @@ export default function ProjectCard({ project }) {
                 <Card.Text>{project.description}</Card.Text>
                 <a className="btn btn-outline-primary btn-sm" href={project.url} target="_blank">{project.buttonText}</a>
             </Card.Body>
-            <Card.Footer>
+            <Card.Footer style={{ backgroundColor:"white" }}>
                 {
                     project.techs.map(tech => {
                         return (
