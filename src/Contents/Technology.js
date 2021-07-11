@@ -1,23 +1,23 @@
 const TECHNOLOGY = {
     JAVASCRIPT: {
         name: "JavaScript",
-        style: "text-yellow-400 font-semibold",
-        type: "warning"
+        style: "text-yellow-500 font-semibold",
+        outline: "#DAA520"
     },
     REACT_NATIVE: {
         name: "React Native",
         style: "text-blue-500 font-semibold",
-        type: "primary"
+        outline: "#1E90FF"
     },
     NODEJS: {
         name: "NodeJS",
         style: "text-green-500 font-semibold",
-        type: "success"
+        outline: "#228B22"
     },
     JAVA: {
         name: "Java",
         style: "text-red-500 font-semibold",
-        type: "danger"
+        outline: "red"
     }
 }
 

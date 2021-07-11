@@ -1,6 +1,6 @@
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
-import pages from '../Content/Navigation';
+import pages from '../Contents/Navigation';
 
 export default function NavBar() {
     const CURRENT_PATH = useLocation().pathname;  

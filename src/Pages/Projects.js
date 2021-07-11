@@ -5,7 +5,7 @@ import {
 } from 'react-bootstrap';
 import NavBar from '../Components/NavBar';
 import ProjectCard from '../Components/ProjectCard';
-import projects from '../Content/Projects';
+import projects from '../Contents/Projects';
 
 export default function Projects() {
     return (

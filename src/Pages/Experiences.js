@@ -5,7 +5,7 @@ import {
 } from 'react-bootstrap';
 import NavBar from '../Components/NavBar';
 import ExperienceCard from '../Components/ExperienceCard';
-import experiences from '../Content/Experiences'
+import experiences from '../Contents/Experiences'
 
 export default function Experiences() {
     return (

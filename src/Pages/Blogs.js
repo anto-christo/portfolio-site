@@ -5,7 +5,7 @@ import {
 } from 'react-bootstrap';
 import NavBar from '../Components/NavBar';
 import BlogCard from '../Components/BlogCard';
-import blogs from '../Content/Blogs';
+import blogs from '../Contents/Blogs';
 
 export default function Blogs() {
     return (
