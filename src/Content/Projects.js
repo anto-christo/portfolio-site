@@ -30,6 +30,13 @@ const PROJECTS = [
         url: "https://github.com/anto-christo/Lords_of_the_Isles",
         buttonText: GITHUB_BUTTON_TEXT,
         techs: [NODEJS]
+    },
+    {
+        title: "Lords of the Isles",
+        description: "A massive online multiplayer game. Explore the isles of the world, buy islands and ships to gather and trade resources to become the ultimate Lord of the Isles.",
+        url: "https://github.com/anto-christo/Lords_of_the_Isles",
+        buttonText: GITHUB_BUTTON_TEXT,
+        techs: [NODEJS]
     }
 ];
 
