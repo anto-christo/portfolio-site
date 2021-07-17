@@ -1,5 +1,4 @@
 import {
-    Card,
     Row,
     Col,
     Container
@@ -7,6 +6,7 @@ import {
 import Lottie from 'react-lottie';
 import NavBar from '../Components/NavBar';
 import * as contactAnimation from '../Assets/contact.json';
+import contact from '../Contents/Contact';
 
 export default function Contact() {
     const defaultOptions = {
@@ -23,30 +23,51 @@ export default function Contact() {
                     <Row>
                         <Col sm={3}></Col>
                         <Col sm={6}>
-                            <Card border="light" className="shadow my-3">
-                                <Card.Body className="text-center">
-                                    <Lottie
-                                        options={defaultOptions}
-                                        height={200}
-                                        width={200}
-                                    />
-                                    <p className="text-lg font-semibold mb-0 mt-5">Email</p>
-                                    <p>anto.christo.20@gmail.com</p>
-                                    <p className=" text-lg font-semibold mb-0">Phone / Whatsapp / Telegram</p>
-                                    <p className="mb-0">8652001978</p>
-                                </Card.Body>
-                                <Card.Footer style={{ backgroundColor: "white" }} className="d-flex mx-auto">
-                                    <a className="btn btn-outline-primary btn-sm mx-4" href="www.github.com" target="_blank">GitHub</a>
-                                    <a className="btn btn-outline-primary btn-sm mx-4" href="www.github.com" target="_blank">GitHub</a>
-                                    <a className="btn btn-outline-primary btn-sm mx-4" href="www.github.com" target="_blank">GitHub</a>
-                                    <a className="btn btn-outline-primary btn-sm mx-4" href="www.github.com" target="_blank">GitHub</a>
-                                </Card.Footer>
-                            </Card>                        
+                            <Row>
+                                <Lottie
+                                    options={defaultOptions}
+                                    height={300}
+                                    width={300}
+                                />
+                            </Row>
+                            {
+                                Object.entries(contact.Personal).map(([ contact, value ]) => {
+                                    return (
+                                        <ContactDetail detail={{ label: contact, value }} />
+                                    );
+                                })
+                            }
+                            <Row className="mt-4 d-flex flex-row justify-content-center">
+                                {
+                                    Object.entries(contact.Social).map(([ social, url ]) => {
+                                        return (
+                                            <a className="btn btn-outline-primary btn-sm mx-4 my-1" href={url} target="_blank">{social}</a>
+                                        );
+                                    })
+                                }
+                            </Row>
                         </Col>
                         <Col sm={3}></Col>
                     </Row>
                 </Container>
             </div>
+        </>
+    );
+}
+
+function ContactDetail({ detail }) {
+    return (
+        <>
+            <Row>
+                <Col className="text-center">
+                    <p className="text-lg font-semibold mb-0">{detail.label}</p>
+                </Col>
+            </Row>
+            <Row>
+                <Col className="text-center text-sm">
+                    <p>{detail.value}</p>
+                </Col>
+            </Row>
         </>
     );
 }
