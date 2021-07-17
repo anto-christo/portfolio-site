@@ -6,7 +6,7 @@ export default function BlogCard({ blog }) {
             <Card.Body>
                 <Card.Title>{blog.title}</Card.Title>
                 <Card.Text>{blog.description}</Card.Text>
-                <a className="btn btn-outline-primary btn-sm" href={blog.url} target="_blank">{blog.buttonText}</a>
+                <a className="btn btn-outline-primary btn-sm" href={blog.url} target="_blank" rel="noreferrer">{blog.buttonText}</a>
             </Card.Body>
         </Card>
     );

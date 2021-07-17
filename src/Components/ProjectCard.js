@@ -8,7 +8,7 @@ export default function ProjectCard({ project }) {
             <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
                 <Card.Text className="text-justify">{project.description}</Card.Text>
-                <a className="btn btn-outline-primary btn-sm" href={project.url} target="_blank">{project.buttonText}</a>
+                <a className="btn btn-outline-primary btn-sm" href={project.url} target="_blank" rel="noreferrer">{project.buttonText}</a>
             </Card.Body>
             <Card.Footer style={{ backgroundColor:"white" }}>
                 {

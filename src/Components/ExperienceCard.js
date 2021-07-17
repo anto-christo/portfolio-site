@@ -11,7 +11,7 @@ export default function ExperienceCard({ experience }) {
                     <Image className="h-10 w-20" src={experience.logo}></Image>
                     <div className="d-flex flex-col -mt-1 ml-2">
                         <Card.Title>
-                            <a className="text-black" href={experience.url} target="_blank">{experience.name}</a>
+                            <a className="text-black" href={experience.url} target="_blank" rel="noreferrer">{experience.name}</a>
                         </Card.Title>
                         <span className="-mt-3">{experience.position}</span>
                     </div>
