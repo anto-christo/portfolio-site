@@ -7,6 +7,7 @@ import Lottie from 'react-lottie';
 import NavBar from '../Components/NavBar';
 import * as contactAnimation from '../Assets/contact.json';
 import contact from '../Contents/Contact';
+import pages from '../Contents/Pages';
 
 export default function Contact() {
     const defaultOptions = {
@@ -14,10 +15,10 @@ export default function Contact() {
         autoplay: true,
         animationData: contactAnimation.default
     };
-
+    
     return (
         <>
-            <NavBar />
+            <NavBar heading={pages[4].text}/>
             <div className="d-flex align-items-center -mt-14">
                 <Container fluid>
                     <Row>
@@ -60,7 +61,7 @@ function ContactDetail({ detail }) {
         <>
             <Row>
                 <Col className="text-center">
-                    <p className="text-lg font-semibold mb-0">{detail.label}</p>
+                    <p className="text-lg font-semibold mb-1">{detail.label}</p>
                 </Col>
             </Row>
             <Row>

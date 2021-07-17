@@ -1,11 +1,12 @@
 import NavBar from '../Components/NavBar';
 import Lottie from 'react-lottie';
-import * as introAnimation from '../Assets/about.json';
 import {
     Container,
     Row,
     Col
 } from 'react-bootstrap';
+import * as introAnimation from '../Assets/about.json';
+import pages from '../Contents/Pages';
 
 export default function About() {
 
@@ -17,7 +18,7 @@ export default function About() {
 
     return (
         <>
-            <NavBar />
+            <NavBar heading={pages[0].text} />
             <div className="d-flex align-items-center -mt-20">
                 <Container fluid>
                     <Row>

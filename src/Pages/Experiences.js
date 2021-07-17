@@ -6,11 +6,12 @@ import {
 import NavBar from '../Components/NavBar';
 import ExperienceCard from '../Components/ExperienceCard';
 import experiences from '../Contents/Experiences'
+import pages from '../Contents/Pages';
 
 export default function Experiences() {
     return (
         <>
-            <NavBar />
+            <NavBar heading={pages[2].text}/>
             <div className="mt-3">
                 <Container fluid>
                     {

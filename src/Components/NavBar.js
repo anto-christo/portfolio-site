@@ -1,8 +1,8 @@
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
-import pages from '../Contents/Navigation';
+import pages from '../Contents/Pages';
 
-export default function NavBar() {
+export default function NavBar({ heading }) {
     const CURRENT_PATH = useLocation().pathname;  
     
     function isCurrent(path) {
@@ -10,7 +10,8 @@ export default function NavBar() {
     }
 
     return (
-        <Navbar collapseOnSelect expand="lg" className="d-md-flex d-block flex-row mx-md-auto mx-0 shadow-lg">
+        <Navbar collapseOnSelect expand="lg" className="shadow-lg">
+            <Navbar.Brand className="d-block d-sm-none">{heading}</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mx-auto">

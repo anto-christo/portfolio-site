@@ -1,6 +1,6 @@
 const PAGES = [
     {
-        text: "About",
+        text: "About Me",
         path: '/'
     },
     {
