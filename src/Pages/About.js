@@ -6,6 +6,7 @@ import {
     Col
 } from 'react-bootstrap';
 import * as introAnimation from '../Assets/about.json';
+import about from '../Contents/About';
 import pages from '../Contents/Pages';
 
 export default function About() {
@@ -48,17 +49,17 @@ export default function About() {
                     </Row>
                     <Row>
                         <Col className="text-center">
-                            <p className="d-none d-md-block" style={getFontSize('mediumHeader')}>Hi, I am Anto</p>
-                            <p className="d-block d-md-none" style={getFontSize('smallHeader')}>Hi, I am Anto</p>
+                            <p className="d-none d-md-block" style={getFontSize('mediumHeader')}>{about.Header}</p>
+                            <p className="d-block d-md-none" style={getFontSize('smallHeader')}>{about.Header}</p>
                         </Col>
                     </Row>
                     <Row>
                         <Col className="text-center mt-1">
                             <p className="d-none d-md-block" style={getFontSize('mediumSubHeader')}>
-                                I am a software developer specializing in building Web Applications, Games and Mobile Applications.
+                                {about.SubHeader}
                             </p>
                             <p className="d-block d-md-none" style={getFontSize('smallSubHeader')}>
-                                I am a software developer specializing in building Web Applications, Games and Mobile Applications.
+                                {about.SubHeader}                            
                             </p>
                         </Col>
                     </Row>
