@@ -15,11 +15,15 @@ export default function Contact() {
         autoplay: true,
         animationData: contactAnimation.default
     };
-    
+
+    const mainDivStyle = {
+        marginTop: '-5%'
+    }
+
     return (
         <>
-            <NavBar heading={pages[4].text}/>
-            <div className="d-flex align-items-center -mt-14">
+            <NavBar heading={pages[4].text} />
+            <div className="d-flex align-items-center" style={mainDivStyle}>
                 <Container fluid>
                     <Row>
                         <Col sm={3}></Col>
@@ -32,20 +36,22 @@ export default function Contact() {
                                 />
                             </Row>
                             {
-                                Object.entries(contact.Personal).map(([ contact, value ]) => {
+                                Object.entries(contact.Personal).map(([contact, value]) => {
                                     return (
                                         <ContactDetail detail={{ label: contact, value }} />
                                     );
                                 })
                             }
-                            <Row className="mt-4 d-flex flex-row justify-content-center">
-                                {
-                                    Object.entries(contact.Social).map(([ social, url ]) => {
-                                        return (
-                                            <a className="btn btn-outline-primary btn-sm mx-4 my-1" href={url} target="_blank" rel="noreferrer">{social}</a>
-                                        );
-                                    })
-                                }
+                            <Row>
+                                <div className="d-flex flex-row flex-wrap justify-content-center">
+                                    {
+                                        Object.entries(contact.Social).map(([social, url]) => {
+                                            return (
+                                                <a className="btn btn-outline-primary btn-sm mx-4 mt-2 my-1" href={url} target="_blank" rel="noreferrer">{social}</a>
+                                            );
+                                        })
+                                    }
+                                </div>
                             </Row>
                         </Col>
                         <Col sm={3}></Col>
@@ -61,11 +67,11 @@ function ContactDetail({ detail }) {
         <>
             <Row>
                 <Col className="text-center">
-                    <p className="text-lg font-semibold mb-1">{detail.label}</p>
+                    <p className="font-weight-bold mb-1">{detail.label}</p>
                 </Col>
             </Row>
             <Row>
-                <Col className="text-center text-sm">
+                <Col className="text-center">
                     <p>{detail.value}</p>
                 </Col>
             </Row>
