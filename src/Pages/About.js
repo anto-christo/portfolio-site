@@ -22,14 +22,14 @@ export default function About() {
     }
 
     function getFontSize(style) {
-        const SIZE = {
+        const size = {
             mediumHeader: '2.5rem',
             smallHeader: '2rem',
             mediumSubHeader: '1.25rem',
             smallSubHeader: '1rem'
         }
         return {
-            fontSize: SIZE[style]
+            fontSize: size[style]
         }
     }
 
