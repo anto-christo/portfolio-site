@@ -5,7 +5,7 @@ import TechBadge from './TechBadge';
 
 export default function ExperienceCard({ experience }) {
     return (
-        <Card border="light" className="shadow my-3">
+        <Card border="light" className="shadow-lg my-3">
             <Card.Body className="mx-1 my-1">
                 <Card.Title>
                     <a style={{ textDecoration: 'none' }} href={experience.url} target="_blank" rel="noreferrer">{experience.name}</a>

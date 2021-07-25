@@ -8,12 +8,12 @@ const PAGES = [
         path: "/projects"
     },
     {
-        text: "Experiences",
-        path: "/experiences"
-    },
-    {
         text: "Blogs",
         path: "/blogs"
+    },
+    {
+        text: "Experiences",
+        path: "/experiences"
     },
     {
         text: "Contact",

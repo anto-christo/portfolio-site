@@ -5,7 +5,7 @@ import TechBadge from './TechBadge';
 
 export default function ProjectCard({ project }) {
     return (
-        <Card border="light" className="shadow my-3">
+        <Card border="light" className="shadow-lg my-3">
             <Card.Body className="mx-1 my-1">
                 <Card.Title>{project.title}</Card.Title>
                 <Card.Text className="text-justify">{project.description}</Card.Text>
@@ -13,7 +13,7 @@ export default function ProjectCard({ project }) {
             </Card.Body>
             <Card.Footer style={{ backgroundColor:"white" }}>
                 {
-                    project.techs.map(tech => {
+                    project.techs.reverse().map(tech => {
                         return (
                             <TechBadge tech={tech} />
                         )

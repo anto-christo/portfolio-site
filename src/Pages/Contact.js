@@ -47,7 +47,7 @@ export default function Contact() {
                                     {
                                         Object.entries(contact.Social).map(([social, url]) => {
                                             return (
-                                                <a className="btn btn-outline-primary btn-sm mx-4 mt-2 my-1" href={url} target="_blank" rel="noreferrer">{social}</a>
+                                                <a className="btn btn-outline-primary btn-sm mx-4 mt-3 my-1" href={url} target="_blank" rel="noreferrer">{social}</a>
                                             );
                                         })
                                     }
