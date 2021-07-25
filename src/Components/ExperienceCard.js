@@ -10,7 +10,7 @@ export default function ExperienceCard({ experience }) {
                 <Card.Title>
                     <a style={{ textDecoration: 'none' }} href={experience.url} target="_blank" rel="noreferrer">{experience.name}</a>
                 </Card.Title>
-                <Card.Text className="text-justify font-italic">{experience.position}</Card.Text>
+                <Card.Text className="text-justify font-italic my-n1 mb-2">{experience.position}</Card.Text>
                 <Card.Text className="text-justify">{experience.content}</Card.Text>
             </Card.Body>
             <Card.Footer style={{ backgroundColor:"white" }}>

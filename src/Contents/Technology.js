@@ -35,6 +35,14 @@ const TECHNOLOGY = {
         name: "CSS",
         color: "#264de4"
     },
+    VUEJS: {
+        name: "VueJS",
+        color: "#4fc08d"
+    },
+    ELECTRON: {
+        name: "Electron",
+        color: "#9feaf9"
+    }
 }
 
 export default TECHNOLOGY;
