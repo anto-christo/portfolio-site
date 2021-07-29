@@ -17,7 +17,7 @@ export default function Contact() {
     };
 
     const mainDivStyle = {
-        marginTop: '-4%'
+        marginTop: '-4rem'
     }
 
     return (

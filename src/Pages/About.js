@@ -18,7 +18,7 @@ export default function About() {
     };
 
     const mainDivStyle = {
-        marginTop: '-4%'
+        marginTop: '-4rem'
     }
 
     function getFontSize(style) {
