@@ -42,8 +42,8 @@ export default function About() {
                         <Col>
                             <Lottie
                                 options={defaultOptions}
-                                height={300}
-                                width={300}
+                                height={'15rem'}
+                                width={'15rem'}
                             />
                         </Col>
                     </Row>
