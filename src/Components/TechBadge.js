@@ -11,7 +11,15 @@ export default function TechBadge({ tech }) {
         }
     };
 
+    function getClass() {
+        let style = "mx-1";
+        if (window.screen.width >= 768) {
+            style += " float-right";
+        }
+        return style;
+    }
+
     return (
-        <Badge style={getBadgeStyle(tech.color)} className="mx-1 float-right" variant={tech.type}>{tech.name}</Badge>
+        <Badge style={getBadgeStyle(tech.color)} className={getClass()} variant={tech.type}>{tech.name}</Badge>
     )
 }
