@@ -5,7 +5,7 @@ const TECHNOLOGY = {
     },
     REACT_NATIVE: {
         name: "React Native",
-        color: "#06bcee"
+        color: "#059dc7"
     },
     NODEJS: {
         name: "NodeJS",
@@ -41,7 +41,11 @@ const TECHNOLOGY = {
     },
     ELECTRON: {
         name: "Electron",
-        color: "#9feaf9"
+        color: "#059dc7"
+    },
+    SQLITE: {
+        name: "SQLite",
+        color: "#044a64"
     }
 }
 

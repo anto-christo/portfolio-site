@@ -7,7 +7,7 @@ const EXPERIENCES = [
         position: "Associate Software Developer, Scholar",
         tenure: "Aug 2019 - Present",
         content: "Contributed in the Frontend and Backend development of products like SAP Enable Now, SAP SuccessFactors, and flagship products like SAP S/4HANA and SAP Industry Cloud.",
-        techs: [T.JAVA, T.JAVASCRIPT, T.NODEJS]
+        techs: [T.JAVASCRIPT, T.NODEJS, T.JAVA]
     },
     {
         name: "Frappe",
@@ -15,7 +15,7 @@ const EXPERIENCES = [
         position: "Software Development Intern",
         tenure: "Dec 2018 - Jan 2019",
         content: "Contributed in developing invoice customisation and printing interface for the fully open source Frappe Accounting application.",
-        techs: [T.VUEJS, T.ELECTRON]
+        techs: [T.VUEJS, T.ELECTRON, T.SQLITE]
     },
     {
         name: "ERPNext",
