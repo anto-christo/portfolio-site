@@ -17,7 +17,7 @@ export default function Contact() {
     };
 
     const mainDivStyle = {
-        marginTop: '-5%'
+        marginTop: '-4%'
     }
 
     return (
@@ -31,8 +31,8 @@ export default function Contact() {
                             <Row>
                                 <Lottie
                                     options={defaultOptions}
-                                    height={300}
-                                    width={300}
+                                    height={'15rem'}
+                                    width={'15rem'}
                                 />
                             </Row>
                             {
