@@ -11,10 +11,11 @@ export default function ExperienceCard({ experience }) {
                     <a style={{ textDecoration: 'none' }} href={experience.url} target="_blank" rel="noreferrer">{experience.name}</a>
                 </Card.Title>
                 <Card.Text className="text-justify font-italic my-n1 mb-2">{experience.position}</Card.Text>
+                <Card.Text className="text-justify font-italic my-n1 mb-2 d-block d-md-none">{experience.tenure}</Card.Text>
                 <Card.Text className="text-justify">{experience.content}</Card.Text>
             </Card.Body>
             <Card.Footer style={{ backgroundColor:"white" }}>
-                <span className="ml-1 float-left">{experience.tenure}</span>
+                <span className="ml-1 float-left d-none d-md-block">{experience.tenure}</span>
                 {
                     experience.techs.map(tech => {
                         return (
