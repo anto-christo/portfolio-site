@@ -1,9 +1,13 @@
 import {
     Card
 } from 'react-bootstrap';
-import TechBadge from './TechBadge'; 
+import TechBadge from './TechBadge';
+import isMediumScreen from '../Utils/index';
 
 export default function ExperienceCard({ experience }) {
+    if (isMediumScreen())
+        experience.techs.reverse();
+
     return (
         <Card border="light" className="shadow-lg my-3">
             <Card.Body className="mx-1 my-1">

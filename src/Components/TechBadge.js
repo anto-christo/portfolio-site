@@ -1,6 +1,7 @@
 import {
     Badge
 } from 'react-bootstrap';
+import isMediumScreen from '../Utils/index';
 
 export default function TechBadge({ tech }) {
     function getBadgeStyle(color) { 
@@ -13,7 +14,7 @@ export default function TechBadge({ tech }) {
 
     function getClass() {
         let style = "mx-1";
-        if (window.screen.width >= 768) {
+        if (isMediumScreen()) {
             style += " float-right";
         }
         return style;
