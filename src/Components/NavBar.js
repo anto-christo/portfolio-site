@@ -10,10 +10,6 @@ export default function NavBar({ heading }) {
         return path === CURRENT_PATH ? true : false;
     }
 
-    const style = {
-        fontFamily: 'Open Sans, sans-serif'
-    }
-
     return (
         <Navbar collapseOnSelect expand="lg" className="shadow-lg">
             <Navbar.Brand className="d-block d-sm-none">{heading}</Navbar.Brand>
