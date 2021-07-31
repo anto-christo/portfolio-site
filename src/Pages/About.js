@@ -5,7 +5,7 @@ import {
     Row,
     Col
 } from 'react-bootstrap';
-import * as introAnimation from '../Assets/about.json';
+import * as introAnimation from '../Assets/hello.json';
 import about from '../Contents/About';
 import pages from '../Contents/Pages';
 import { FONT_STYLE } from '../Utils/style';
@@ -50,8 +50,8 @@ export default function About() {
                         <Col>
                             <Lottie
                                 options={defaultOptions}
-                                height={'15rem'}
-                                width={'15rem'}
+                                height={'16rem'}
+                                width={'16rem'}
                             />
                         </Col>
                     </Row>

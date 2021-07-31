@@ -27,8 +27,8 @@ export default function Contact() {
             <div className="d-flex align-items-center" style={mainDivStyle}>
                 <Container fluid>
                     <Row>
-                        <Col sm={3}></Col>
-                        <Col sm={6}>
+                        <Col sm={2}></Col>
+                        <Col sm={8}>
                             <Row>
                                 <Lottie
                                     options={defaultOptions}
@@ -48,14 +48,14 @@ export default function Contact() {
                                     {
                                         Object.entries(contact.Social).map(([social, url]) => {
                                             return (
-                                                <a style={CONTENT_STYLE} className="btn btn-outline-primary btn-sm mx-4 mt-3 my-1" href={url} target="_blank" rel="noreferrer">{social}</a>
+                                                <a style={Object.assign({ minWidth: '15%' }, CONTENT_STYLE)} className="btn btn-outline-primary btn-sm mx-4 mt-3 my-1" href={url} target="_blank" rel="noreferrer">{social}</a>
                                             );
                                         })
                                     }
                                 </div>
                             </Row>
                         </Col>
-                        <Col sm={3}></Col>
+                        <Col sm={2}></Col>
                     </Row>
                 </Container>
             </div>
