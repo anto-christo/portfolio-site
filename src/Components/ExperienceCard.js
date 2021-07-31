@@ -9,7 +9,7 @@ export default function ExperienceCard({ experience }) {
     if (isMediumScreen())
         experience.techs.reverse();
 
-    const titleStyle = Object.assign({ textDecoration: 'none' }, CONTENT_STYLE);
+    const titleStyle = Object.assign({ textDecoration: 'none' }, HEADER_STYLE);
 
     return (
         <Card border="light" className="shadow-lg my-3">
