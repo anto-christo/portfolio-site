@@ -1,12 +1,17 @@
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 import pages from '../Contents/Pages';
+import { CONTENT_STYLE } from '../Utils/style';
 
 export default function NavBar({ heading }) {
     const CURRENT_PATH = useLocation().pathname;  
     
     function isCurrent(path) {
         return path === CURRENT_PATH ? true : false;
+    }
+
+    const style = {
+        fontFamily: 'Open Sans, sans-serif'
     }
 
     return (
@@ -18,7 +23,7 @@ export default function NavBar({ heading }) {
                     {
                         pages.map(page => {
                             return (
-                                <Nav.Link className={isCurrent(page.path) ? 'mx-2 active' : 'mx-2'} as={Link} to={page.path}>{page.text}</Nav.Link>
+                                <Nav.Link style={CONTENT_STYLE} className={isCurrent(page.path) ? 'mx-2 active' : 'mx-2'} as={Link} to={page.path}>{page.text}</Nav.Link>
                             );
                         })
                     }
