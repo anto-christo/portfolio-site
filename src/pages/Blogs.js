@@ -5,8 +5,8 @@ import {
 } from 'react-bootstrap';
 import NavBar from '../components/NavBar';
 import BlogCard from '../components/BlogCard';
-import blogs from '../Contents/Blogs';
-import pages from '../Contents/Pages';
+import blogs from '../contents/Blogs';
+import pages from '../contents/Pages';
 
 export default function Blogs() {
     return (

@@ -4,23 +4,23 @@ import {
     Col
 } from 'react-bootstrap';
 import NavBar from '../components/NavBar';
-import ProjectCard from '../components/ProjectCard';
-import projects from '../Contents/Projects';
-import pages from '../Contents/Pages';
+import ExperienceCard from '../components/ExperienceCard';
+import experiences from '../contents/Experiences'
+import pages from '../contents/Pages';
 
-export default function Projects() {
+export default function Experiences() {
     return (
         <>
-            <NavBar heading={pages[1].text}/>
+            <NavBar heading={pages[2].text}/>
             <div className="mt-3">
                 <Container fluid>
                     {
-                        projects.map(project => {
+                        experiences.map(experience => {
                             return (
                                 <Row>
                                     <Col sm={3}></Col>
                                     <Col sm={6}>
-                                        <ProjectCard project={project} />
+                                        <ExperienceCard experience={experience} />
                                     </Col>
                                     <Col sm={3}></Col>
                                 </Row>

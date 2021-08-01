@@ -6,8 +6,8 @@ import {
     Col
 } from 'react-bootstrap';
 import * as introAnimation from '../assets/hello.json';
-import about from '../Contents/About';
-import pages from '../Contents/Pages';
+import about from '../contents/About';
+import pages from '../contents/Pages';
 import { FONT_STYLE } from '../utils/style';
 
 export default function About() {
@@ -15,7 +15,7 @@ export default function About() {
     const defaultOptions = {
         loop: true,
         autoplay: true,
-        animationData: introAnimation.default
+        animationData: JSON.parse(JSON.stringify(introAnimation.default))
     };
 
     const mainDivStyle = {

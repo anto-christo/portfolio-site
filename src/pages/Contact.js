@@ -6,15 +6,15 @@ import {
 import Lottie from 'react-lottie';
 import NavBar from '../components/NavBar';
 import * as contactAnimation from '../assets/contact.json';
-import contact from '../Contents/Contact';
-import pages from '../Contents/Pages';
+import contact from '../contents/Contact';
+import pages from '../contents/Pages';
 import { HEADER_STYLE, CONTENT_STYLE } from '../utils/style';
 
 export default function Contact() {
     const defaultOptions = {
         loop: true,
         autoplay: true,
-        animationData: contactAnimation.default
+        animationData: JSON.parse(JSON.stringify(contactAnimation.default))
     };
 
     const mainDivStyle = {

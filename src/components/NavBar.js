@@ -1,6 +1,6 @@
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
-import pages from '../Contents/Pages';
+import pages from '../contents/Pages';
 import { CONTENT_STYLE } from '../utils/style';
 
 export default function NavBar({ heading }) {
