@@ -6,8 +6,9 @@ import isMediumScreen from '../utils/screen';
 import { HEADER_STYLE, CONTENT_STYLE } from '../utils/style';
 
 export default function ExperienceCard({ experience }) {
+    let experienceTechnologies = [...experience.techs];
     if (isMediumScreen())
-        experience.techs.reverse();
+        experienceTechnologies.reverse();
 
     const titleStyle = Object.assign({ textDecoration: 'none' }, HEADER_STYLE);
 
@@ -24,7 +25,7 @@ export default function ExperienceCard({ experience }) {
             <Card.Footer style={{ backgroundColor:"white" }}>
                 <span className="ml-1 float-left d-none d-md-block">{experience.tenure}</span>
                 {
-                    experience.techs.map((tech, index) => {
+                    experienceTechnologies.map((tech, index) => {
                         return (
                             <TechBadge key ={index} tech={tech} />
                         )

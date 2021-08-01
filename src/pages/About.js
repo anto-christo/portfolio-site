@@ -62,7 +62,7 @@ export default function About() {
                         </Col>
                     </Row>
                     <Row>
-                        <Col className="text-center">
+                        <Col className="text-center mt-n1">
                             <p className="d-none d-md-block" style={getFont('mediumSubHeader')}>
                                 {about.SubHeader}
                             </p>

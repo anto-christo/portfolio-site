@@ -43,9 +43,13 @@ const TECHNOLOGY = {
         name: "Electron",
         color: "#059dc7"
     },
-    SQLITE: {
-        name: "SQLite",
+    SQL: {
+        name: "SQL",
         color: "#044a64"
+    },
+    PHP: {
+        name: "PHP",
+        color: "#4F5B93"
     }
 }
 

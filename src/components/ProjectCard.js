@@ -6,8 +6,9 @@ import isMediumScreen from '../utils/screen';
 import { HEADER_STYLE, CONTENT_STYLE } from '../utils/style';
 
 export default function ProjectCard({ project }) {
+    let projectTechnologies = [...project.techs];
     if (isMediumScreen())
-        project.techs.reverse();
+        projectTechnologies.reverse();
 
     return (
         <Card border="light" className="shadow-lg mt-2 mb-2">
@@ -18,7 +19,7 @@ export default function ProjectCard({ project }) {
             </Card.Body>
             <Card.Footer style={{ backgroundColor:"white" }}>
                 {
-                    project.techs.map((tech, index) => {
+                    projectTechnologies.map((tech, index) => {
                         return (
                             <TechBadge key={index} tech={tech} />
                         )

@@ -1,6 +1,6 @@
 const ABOUT = {
     Header: "Hi, I am Anto",
-    SubHeader: "A software developer specializing in building web applications, games and mobile applications"
+    SubHeader: "A web and mobile software developer who is passionate about Open Source."
 }
 
 export default ABOUT;
