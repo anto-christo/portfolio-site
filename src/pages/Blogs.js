@@ -12,7 +12,7 @@ export default function Blogs() {
     return (
         <>
             <NavBar heading={pages.blogs.text}/>
-            <div className="mt-1">
+            <div className="mt-2">
                 <Container fluid>
                     {
                         blogs.map((blog, index) => {

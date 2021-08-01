@@ -3,7 +3,7 @@ import { HEADER_STYLE, CONTENT_STYLE } from '../utils/style';
 
 export default function BlogCard({ blog }) {
     return (
-        <Card border="light" className="shadow-lg my-3">
+        <Card border="light" className="shadow-lg mt-2 mb-2">
             <Card.Body className="mx-1 my-1">
                 <Card.Title style={HEADER_STYLE}>{blog.title}</Card.Title>
                 <Card.Text style={CONTENT_STYLE} className="text-justify">{blog.description}</Card.Text>

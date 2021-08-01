@@ -12,7 +12,7 @@ export default function ExperienceCard({ experience }) {
     const titleStyle = Object.assign({ textDecoration: 'none' }, HEADER_STYLE);
 
     return (
-        <Card border="light" className="shadow-lg my-3">
+        <Card border="light" className="shadow-lg mt-2 mb-2">
             <Card.Body className="mx-1 my-1">
                 <Card.Title>
                     <a style={titleStyle} href={experience.url} target="_blank" rel="noreferrer">{experience.name}</a>

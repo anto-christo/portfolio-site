@@ -12,7 +12,7 @@ export default function Projects() {
     return (
         <>
             <NavBar heading={pages.projects.text}/>
-            <div className="mt-1">
+            <div className="mt-2">
                 <Container fluid>
                     {
                         projects.map((project, index) => {
