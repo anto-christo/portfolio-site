@@ -37,18 +37,18 @@ export default function Contact() {
                                 />
                             </Row>
                             {
-                                Object.entries(contact.Personal).map(([contact, value]) => {
+                                Object.entries(contact.Personal).map(([contact, value], index) => {
                                     return (
-                                        <ContactDetail detail={{ label: contact, value }} />
+                                        <ContactDetail key={index} detail={{ label: contact, value }} />
                                     );
                                 })
                             }
                             <Row>
                                 <div className="d-flex flex-row flex-wrap justify-content-center">
                                     {
-                                        Object.entries(contact.Social).map(([social, url]) => {
+                                        Object.entries(contact.Social).map(([social, url], index) => {
                                             return (
-                                                <a style={Object.assign({ minWidth: '15%' }, CONTENT_STYLE)} className="btn btn-outline-primary btn-sm mx-4 mt-3 my-1" href={url} target="_blank" rel="noreferrer">{social}</a>
+                                                <a key={index} style={Object.assign({ minWidth: '15%' }, CONTENT_STYLE)} className="btn btn-outline-primary btn-sm mx-4 mt-3 my-1" href={url} target="_blank" rel="noreferrer">{social}</a>
                                             );
                                         })
                                     }

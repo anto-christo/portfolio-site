@@ -24,9 +24,9 @@ export default function ExperienceCard({ experience }) {
             <Card.Footer style={{ backgroundColor:"white" }}>
                 <span className="ml-1 float-left d-none d-md-block">{experience.tenure}</span>
                 {
-                    experience.techs.map(tech => {
+                    experience.techs.map((tech, index) => {
                         return (
-                            <TechBadge tech={tech} />
+                            <TechBadge key ={index} tech={tech} />
                         )
                     })
                 }

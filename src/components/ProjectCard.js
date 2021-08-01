@@ -18,9 +18,9 @@ export default function ProjectCard({ project }) {
             </Card.Body>
             <Card.Footer style={{ backgroundColor:"white" }}>
                 {
-                    project.techs.map(tech => {
+                    project.techs.map((tech, index) => {
                         return (
-                            <TechBadge tech={tech} />
+                            <TechBadge key={index} tech={tech} />
                         )
                     })
                 }

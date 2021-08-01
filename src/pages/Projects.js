@@ -15,12 +15,12 @@ export default function Projects() {
             <div className="mt-3">
                 <Container fluid>
                     {
-                        projects.map(project => {
+                        projects.map((project, index) => {
                             return (
                                 <Row>
                                     <Col sm={3}></Col>
                                     <Col sm={6}>
-                                        <ProjectCard project={project} />
+                                        <ProjectCard key={index} project={project} />
                                     </Col>
                                     <Col sm={3}></Col>
                                 </Row>

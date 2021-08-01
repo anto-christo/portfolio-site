@@ -21,7 +21,7 @@ const EXPERIENCES = [
         name: "ERPNext",
         url: "https://erpnext.com",
         position: "Student Developer",
-        tenure: "Apr 2018 - Oct 2019",
+        tenure: "Apr 2018 - Oct 2018",
         content: "Contributed in developing full stack open source web framework called FrappeJS and in developing a 100% open source accounting application called Frappe Accounting.",
         techs: [T.NODEJS, T.VUEJS, T.ELECTRON]
     }
