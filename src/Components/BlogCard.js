@@ -1,5 +1,5 @@
 import { Card } from 'react-bootstrap';
-import { HEADER_STYLE, CONTENT_STYLE } from '../Utils/style';
+import { HEADER_STYLE, CONTENT_STYLE } from '../utils/style';
 
 export default function BlogCard({ blog }) {
     return (

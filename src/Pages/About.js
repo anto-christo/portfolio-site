@@ -1,14 +1,14 @@
-import NavBar from '../Components/NavBar';
+import NavBar from '../components/NavBar';
 import Lottie from 'react-lottie';
 import {
     Container,
     Row,
     Col
 } from 'react-bootstrap';
-import * as introAnimation from '../Assets/hello.json';
+import * as introAnimation from '../assets/hello.json';
 import about from '../Contents/About';
 import pages from '../Contents/Pages';
-import { FONT_STYLE } from '../Utils/style';
+import { FONT_STYLE } from '../utils/style';
 
 export default function About() {
 

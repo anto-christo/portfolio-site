@@ -3,8 +3,8 @@ import {
     Row,
     Col
 } from 'react-bootstrap';
-import NavBar from '../Components/NavBar';
-import BlogCard from '../Components/BlogCard';
+import NavBar from '../components/NavBar';
+import BlogCard from '../components/BlogCard';
 import blogs from '../Contents/Blogs';
 import pages from '../Contents/Pages';
 

@@ -2,8 +2,8 @@ import {
     Card
 } from 'react-bootstrap';
 import TechBadge from './TechBadge'; 
-import isMediumScreen from '../Utils/screen';
-import { HEADER_STYLE, CONTENT_STYLE } from '../Utils/style';
+import isMediumScreen from '../utils/screen';
+import { HEADER_STYLE, CONTENT_STYLE } from '../utils/style';
 
 export default function ProjectCard({ project }) {
     if (isMediumScreen())

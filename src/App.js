@@ -3,11 +3,11 @@ import {
   Route
 } from "react-router-dom";
 
-import About from './Pages/About';
-import Projects from './Pages/Projects';
-import Experiences from './Pages/Experiences';
-import Blogs from './Pages/Blogs';
-import Contact from './Pages/Contact';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Experiences from './pages/Experiences';
+import Blogs from './pages/Blogs';
+import Contact from './pages/Contact';
 
 function App() {
   return (

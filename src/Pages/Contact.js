@@ -4,11 +4,11 @@ import {
     Container
 } from 'react-bootstrap';
 import Lottie from 'react-lottie';
-import NavBar from '../Components/NavBar';
-import * as contactAnimation from '../Assets/contact.json';
+import NavBar from '../components/NavBar';
+import * as contactAnimation from '../assets/contact.json';
 import contact from '../Contents/Contact';
 import pages from '../Contents/Pages';
-import { HEADER_STYLE, CONTENT_STYLE } from '../Utils/style';
+import { HEADER_STYLE, CONTENT_STYLE } from '../utils/style';
 
 export default function Contact() {
     const defaultOptions = {

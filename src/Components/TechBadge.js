@@ -1,8 +1,8 @@
 import {
     Badge
 } from 'react-bootstrap';
-import isMediumScreen from '../Utils/screen';
-import { CONTENT_STYLE } from '../Utils/style';
+import isMediumScreen from '../utils/screen';
+import { CONTENT_STYLE } from '../utils/style';
 
 export default function TechBadge({ tech }) {
     function getBadgeStyle(color) { 
