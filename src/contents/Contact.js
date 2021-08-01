@@ -1,7 +1,17 @@
 const CONTACT = {
     Personal : {
-        Email: "anto.christo.20@gmail.com",
-        Phone: "+91 8652001978"
+        Email: {
+            id: "anto.christo.20@gmail.com",
+            get url() {
+                return `mailto:${this.id}`;
+            }
+        },
+        Phone: {
+            id: "+91 8652 00 1978",
+            get url() {
+                return "tel:+918652001978";
+            }
+        }
     },
     Social: {
         GitHub: "https://github.com/anto-christo",

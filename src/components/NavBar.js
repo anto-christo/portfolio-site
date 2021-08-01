@@ -17,7 +17,7 @@ export default function NavBar({ heading }) {
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mx-auto">
                     {
-                        pages.map((page, index) => {
+                        Object.values(pages).map((page, index) => {
                             return (
                                 <Nav.Link key={index} style={CONTENT_STYLE} className={isCurrent(page.path) ? 'mx-2 active' : 'mx-2'} as={Link} to={page.path}>{page.text}</Nav.Link>
                             );

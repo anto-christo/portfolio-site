@@ -11,16 +11,16 @@ import pages from '../contents/Pages';
 export default function Experiences() {
     return (
         <>
-            <NavBar heading={pages[3].text}/>
+            <NavBar heading={pages.experiences.text}/>
             <div className="mt-3">
                 <Container fluid>
                     {
                         experiences.map((experience, index) => {
                             return (
-                                <Row>
+                                <Row key={index}>
                                     <Col sm={3}></Col>
                                     <Col sm={6}>
-                                        <ExperienceCard key={index} experience={experience} />
+                                        <ExperienceCard experience={experience} />
                                     </Col>
                                     <Col sm={3}></Col>
                                 </Row>

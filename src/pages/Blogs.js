@@ -11,16 +11,16 @@ import pages from '../contents/Pages';
 export default function Blogs() {
     return (
         <>
-            <NavBar heading={pages[2].text}/>
+            <NavBar heading={pages.blogs.text}/>
             <div className="mt-3">
                 <Container fluid>
                     {
                         blogs.map((blog, index) => {
                             return (
-                                <Row>
+                                <Row key={index}>
                                     <Col sm={3}></Col>
                                     <Col sm={6}>
-                                        <BlogCard key={index} blog={blog} />
+                                        <BlogCard blog={blog} />
                                     </Col>
                                     <Col sm={3}></Col>
                                 </Row>

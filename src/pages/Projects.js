@@ -11,16 +11,16 @@ import pages from '../contents/Pages';
 export default function Projects() {
     return (
         <>
-            <NavBar heading={pages[1].text}/>
+            <NavBar heading={pages.projects.text}/>
             <div className="mt-3">
                 <Container fluid>
                     {
                         projects.map((project, index) => {
                             return (
-                                <Row>
+                                <Row key={index}>
                                     <Col sm={3}></Col>
                                     <Col sm={6}>
-                                        <ProjectCard key={index} project={project} />
+                                        <ProjectCard project={project} />
                                     </Col>
                                     <Col sm={3}></Col>
                                 </Row>

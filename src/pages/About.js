@@ -43,7 +43,7 @@ export default function About() {
 
     return (
         <>
-            <NavBar heading={pages[0].text} />
+            <NavBar heading={pages.about.text} />
             <div className="d-flex align-items-center" style={mainDivStyle}>
                 <Container fluid>
                     <Row>
@@ -56,13 +56,13 @@ export default function About() {
                         </Col>
                     </Row>
                     <Row>
-                        <Col className="text-center">
+                        <Col className="text-center mt-3">
                             <p className="d-none d-md-block" style={getFont('mediumHeader')}>{about.Header}</p>
                             <p className="d-block d-md-none" style={getFont('smallHeader')}>{about.Header}</p>
                         </Col>
                     </Row>
                     <Row>
-                        <Col className="text-center mt-1">
+                        <Col className="text-center">
                             <p className="d-none d-md-block" style={getFont('mediumSubHeader')}>
                                 {about.SubHeader}
                             </p>

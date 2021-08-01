@@ -19,11 +19,11 @@ export default function Contact() {
 
     const mainDivStyle = {
         marginTop: '-4rem'
-    }
+    };
 
     return (
         <>
-            <NavBar heading={pages[4].text} />
+            <NavBar heading={pages.contact.text} />
             <div className="d-flex align-items-center" style={mainDivStyle}>
                 <Container fluid>
                     <Row>
@@ -38,6 +38,7 @@ export default function Contact() {
                             </Row>
                             {
                                 Object.entries(contact.Personal).map(([contact, value], index) => {
+                                    console.log(value);
                                     return (
                                         <ContactDetail key={index} detail={{ label: contact, value }} />
                                     );
@@ -48,7 +49,7 @@ export default function Contact() {
                                     {
                                         Object.entries(contact.Social).map(([social, url], index) => {
                                             return (
-                                                <a key={index} style={Object.assign({ minWidth: '15%' }, CONTENT_STYLE)} className="btn btn-outline-primary btn-sm mx-4 mt-3 my-1" href={url} target="_blank" rel="noreferrer">{social}</a>
+                                                <a key={index} style={Object.assign({ minWidth: '10%' }, CONTENT_STYLE)} className="btn btn-outline-primary btn-sm mx-4 mt-4 my-1" href={url} target="_blank" rel="noreferrer">{social}</a>
                                             );
                                         })
                                     }
@@ -72,8 +73,8 @@ function ContactDetail({ detail }) {
                 </Col>
             </Row>
             <Row>
-                <Col className="text-center mt-n2 mb-1">
-                    <p style={CONTENT_STYLE}>{detail.value}</p>
+                <Col className="text-center mt-n2 mb-3">
+                    <a style={Object.assign({ textDecoration: 'none' }, CONTENT_STYLE)} href={detail.value.url}>{detail.value.id}</a>
                 </Col>
             </Row>
         </>
