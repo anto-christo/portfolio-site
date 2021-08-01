@@ -12,7 +12,7 @@ export default function Experiences() {
     return (
         <>
             <NavBar heading={pages.experiences.text}/>
-            <div className="mt-3">
+            <div className="mt-1">
                 <Container fluid>
                     {
                         experiences.map((experience, index) => {
