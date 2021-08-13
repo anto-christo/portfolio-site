@@ -11,7 +11,7 @@ export default function ProjectCard({ project }) {
         projectTechnologies.reverse();
 
     return (
-        <Card border="light" className="shadow-lg mt-2 mb-2">
+        <Card border="light" className="shadow-lg mt-2 mb-3">
             <Card.Body className="mx-1 my-1">
                 <Card.Title style={HEADER_STYLE}>{project.title}</Card.Title>
                 <Card.Text style={CONTENT_STYLE} className="text-justify">{project.description}</Card.Text>
