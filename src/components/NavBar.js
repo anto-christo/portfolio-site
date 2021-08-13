@@ -11,7 +11,7 @@ export default function NavBar({ heading }) {
     }
 
     return (
-        <Navbar collapseOnSelect expand="lg" className="shadow-lg">
+        <Navbar fixed="top" collapseOnSelect expand="lg" className="shadow-lg bg-white">
             <Navbar.Brand className="d-block d-sm-none">{heading}</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">

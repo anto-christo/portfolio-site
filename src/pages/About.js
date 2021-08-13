@@ -1,10 +1,10 @@
-import NavBar from '../components/NavBar';
-import Lottie from 'react-lottie';
 import {
     Container,
     Row,
     Col
 } from 'react-bootstrap';
+import Lottie from 'react-lottie';
+import NavBar from '../components/NavBar';
 import * as introAnimation from '../assets/hello.json';
 import about from '../contents/About';
 import pages from '../contents/Pages';
@@ -19,7 +19,7 @@ export default function About() {
     };
 
     const mainDivStyle = {
-        marginTop: '-4rem'
+        marginTop: '0rem'
     }
 
     function getFont(style) {
