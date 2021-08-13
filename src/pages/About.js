@@ -19,7 +19,7 @@ export default function About() {
     };
 
     const mainDivStyle = {
-        marginTop: '0rem'
+        marginTop: '-2rem'
     }
 
     function getFont(style) {

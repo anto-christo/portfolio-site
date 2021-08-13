@@ -18,7 +18,7 @@ export default function Contact() {
     };
 
     const mainDivStyle = {
-        marginTop: '0rem'
+        marginTop: '-2rem'
     };
 
     return (
