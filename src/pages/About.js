@@ -8,7 +8,7 @@ import NavBar from '../components/NavBar';
 import * as introAnimation from '../assets/hello.json';
 import about from '../contents/About';
 import pages from '../contents/Pages';
-import { FONT_STYLE } from '../utils/style';
+import { FONT_STYLE, CONTENT_STYLE } from '../utils/style';
 
 export default function About() {
 
@@ -69,6 +69,11 @@ export default function About() {
                             <p className="d-block d-md-none" style={getFont('smallSubHeader')}>
                                 {about.SubHeader}                            
                             </p>
+                            <div className="d-block d-md-none">
+                                <a style={CONTENT_STYLE} className="btn btn-outline-primary btn-sm mt-5" href={about.ProjectLink}>
+                                    {about.ProjectButton}
+                                </a>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
